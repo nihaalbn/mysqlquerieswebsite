@@ -1,0 +1,51 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+body{
+border:2px solid black;
+padding:25px;
+background:url(dbr4.png);
+background-repeat:repeat;
+background-size:auto;
+text-align:center;
+}
+h2{
+color:grey;
+text-align:center;
+}
+div{
+background-color:lightgrey;
+width:"300px";
+border:10px solid blue;
+padding:25px;
+margin:25px;
+}
+</style>
+</head>
+<body>
+<div>
+<h2>SYNTAX</h2><br/>
+SELECT field1, field2,...fieldN <br/>
+FROM table_name1, table_name2...<br/>
+[WHERE Clause]<br/>
+[OFFSET M ][LIMIT N]
+<br/>
+<h2>DETAILS</h2><br/>
+=>You can use one or more tables separated by comma to include various conditions using a WHERE clause, but the WHERE clause is an optional part of the SELECT command.
+<br/>
+=>You can fetch one or more fields in a single SELECT command.
+<br/>
+=>You can specify star (*) in place of fields. In this case, SELECT will return all the fields.
+<br/>
+=>You can specify any condition using the WHERE clause.
+<br/>
+=>You can specify an offset using OFFSET from where SELECT will start returning records. By default, the offset starts at zero.
+<br/>
+=>You can limit the number of returns using the LIMIT attribute.
+<h2>EXAMPLE</h2>
+<p>SELECT tutorial_id, tutorial_title, tutorial_author, submission_date
+      FROM tutorials_tbl</p>
+</div>
+</body>
+</html>

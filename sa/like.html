@@ -1,0 +1,42 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+body{
+border:2px solid black;
+padding:25px;
+background:url(dbr4.png);
+background-repeat:repeat;
+background-size:auto;
+text-align:center;
+}
+h2{
+color:grey;
+text-align:center;
+}
+div{
+background-color:lightgrey;
+width:"300px";
+border:10px solid blue;
+padding:25px;
+margin:25px;
+}
+</style>
+</head>
+<body>
+<div>
+<h2>SYNTAX</h2><br/>
+SELECT field1, field2,...fieldN table_name1, table_name2...<br/>
+WHERE field1 LIKE condition1 [AND [OR]] filed2 = 'somevalue'
+<br/>
+<br/>
+<br/>
+<h2>EXAMPLE</h2>
+<p>SELECT tutorial_id, tutorial_title, <br/>
+      tutorial_author, submission_date<br/>
+      FROM tutorials_tbl<br/>
+      WHERE tutorial_author LIKE "%jay%";<br/>
+</p>
+</div>
+</body>
+</html>
